@@ -30,16 +30,32 @@ export default class App extends Component<Props> {
 
   network() {
     // 网络请求
+    fetch(DEFAULT_URL).then((result)=> (result.json)).then((result)=> {
+      console.log(result);
+    })
+  JSON.parse()
+  data.a
   }
 
-  sort() {
+  sort=() =>{
     // 排序
-    
+    let arr=Array.slice()
+    console.log(arr.sort((a,b)=>{ return a-b }))
   }
 
   fuzzbuzz() {
     // 被3 整除输出"fuzz" 被5整除输出"buzz" 同时被3和5整除输出"fuzzbuzz"
-    
+    for(var i=0 ;i<100 ;i++ ){
+      if(i%3){
+
+      }
+      if(i%5){
+
+      }
+      if(i%3&&i%5){
+
+      }
+    }
   }
 
   render() {
